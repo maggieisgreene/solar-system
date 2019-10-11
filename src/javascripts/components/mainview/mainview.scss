@@ -1,0 +1,13 @@
+#mainview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: gainsboro;
+  height: 18rem;
+  margin: 1rem;
+  text-align: center;
+  width: 18rem;
+}
