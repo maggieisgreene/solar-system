@@ -20,12 +20,16 @@ const printMainCard = () => {
 
 const printImage = () => {
   const planetsTwo = data.getPlanets();
+  // if (planetsTwo[j] === $(document).event.target) {
   const domStringTwo = `    
   <div class="card">
     <div class="card-body">
-      <img class="card-title">${planetsTwo.imageUrl}</img>
+      <img>${planetsTwo.imageUrl}</img>
     </div>
   </div>`;
+  // } else {
+
+  // }
   utilities.printToDom('mainview', domStringTwo);
 };
 
