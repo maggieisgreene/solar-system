@@ -1,13 +1,19 @@
-// import $ from 'jquery';
-// import utilities from '../../helpers/utilities';
+import $ from 'jquery';
 
-// const printImage = () => {
-//   const domString = '<p style="color: white">gday stranger</p>';
-//   utilities.printToDom('mainview', domString);
-// };
+const hideName = (event) => {
+  $(event.target).find('h5').toggleClass('d-none');
+};
 
-// const attachEvents = () => {
-//   $(document).on('click', 'h5', printImage);
-// };
+const attachFirstEvent = () => {
+  $('.card').hover(hideName);
+};
 
-// export default { attachEvents };
+const showPlanets = (event) => {
+  $(event.target).find('img').toggleClass('d-none');
+};
+
+const attachEvent = () => {
+  $('.card').hover(showPlanets);
+};
+
+export default { attachFirstEvent, attachEvent };
