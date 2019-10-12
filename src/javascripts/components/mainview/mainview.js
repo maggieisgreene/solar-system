@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/planets';
 import './mainview.scss';
@@ -19,12 +18,4 @@ const printMainCard = () => {
   utilities.printToDom('mainview', domString);
 };
 
-const showPlanets = (event) => {
-  $(event.target).find('img').toggleClass('d-none');
-};
-
-const attachEvents = () => {
-  $('.card').hover(showPlanets);
-};
-
-export default { printMainCard, attachEvents };
+export default { printMainCard };
