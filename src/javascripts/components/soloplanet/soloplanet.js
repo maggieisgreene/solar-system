@@ -7,8 +7,8 @@ const soloPlanetView = (event) => {
   const planet = data.getPlanet(event.target.closest('.card').id)[0];
   console.error(planet);
   const domString = `
-    <div class="card">
-      <img class="card-img-top" src="${planet.imageUrl}" alt="Image of ${planet.name}">
+    <div class="card solo">
+      <img class="card-img-top solo-pic" src="${planet.imageUrl}" alt="Image of ${planet.name}">
       <div class="card-body">
         <p class="card-text">${planet.description}</p>
       </div>
