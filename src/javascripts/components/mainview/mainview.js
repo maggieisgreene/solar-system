@@ -11,6 +11,7 @@ const printMainCard = () => {
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">${planets[i].name}</h5>
+        <img class="d-none" src="${planets[i].imageUrl}"></img>
       </div>
     </div>
     `;
@@ -18,23 +19,12 @@ const printMainCard = () => {
   utilities.printToDom('mainview', domString);
 };
 
-const printImage = () => {
-  const planetsTwo = data.getPlanets();
-  // if (planetsTwo[j] === $(document).event.target) {
-  const domStringTwo = `    
-  <div class="card">
-    <div class="card-body">
-      <img>${planetsTwo.imageUrl}</img>
-    </div>
-  </div>`;
-  // } else {
-
-  // }
-  utilities.printToDom('mainview', domStringTwo);
+const showPlanets = (event) => {
+  $(event.target).find('img').toggleClass('d-none');
 };
 
 const attachEvents = () => {
-  $(document).on('click', 'h5', printImage);
+  $('.card').hover(showPlanets);
 };
 
 export default { printMainCard, attachEvents };
