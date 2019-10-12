@@ -1,20 +1,21 @@
-#mainview {
+#soloview {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.all {
+.solo {
   background-color: black;
-  height: 18rem;
+  height: 30rem;
   margin: 1rem;
   text-align: center;
-  width: 18rem;
+  width: 30rem;
 }
 
-.all-pics {
+.solo-pic {
+  align-self: center;
   border-radius: 1em;
-  height: 10rem;
-  margin: -1.3rem;
-  width: 10rem;
+  display: flex;
+  height: 80%;
+  width: 80%;
 }
