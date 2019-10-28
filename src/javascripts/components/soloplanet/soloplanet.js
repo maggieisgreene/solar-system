@@ -7,7 +7,7 @@ const soloPlanetView = (event) => {
   const soloPlanet = data.getPlanet(event.target.closest('.card').id)[0];
   const domString = `
     <div class="card solo">
-      <button id="hidePlanet" class="close d-flex justify-content-end">x</button>
+      <h5>X</h5>
       <img class="card-img-top solo-pic" src="${soloPlanet.imageUrl}" alt="Image of ${soloPlanet.name}">
       <div class="card-body">
         <p class="card-text">${soloPlanet.description}</p>
@@ -23,7 +23,7 @@ const showSoloPlanetView = () => {
 };
 
 const hidePlanet = () => {
-  $('#hidePlanet').on('click', () => {
+  $(document).on('click', 'h5', () => {
     $('#soloview').hide();
     $('#mainview').show();
   });
