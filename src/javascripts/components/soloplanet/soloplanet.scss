@@ -6,17 +6,21 @@
 
 .solo {
   background-color: black;
-  height: 30rem;
+  height: 35rem;
   margin: 1rem;
   padding: 7px;
   text-align: center;
   width: 30rem;
 }
 
+#expelButton {
+  text-align: end;
+}
+
 .solo-pic {
   align-self: center;
   border-radius: 1em;
   display: flex;
-  height: 80%;
-  width: 80%;
+  height: 18rem;
+  width: 18rem;
 }

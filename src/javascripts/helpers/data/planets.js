@@ -21,7 +21,7 @@ const planets = [
     description: 'Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It\'s also the only planet in our solar system with liquid water on the surface.',
     isGasPlanet: false,
     numberOfMoons: 1,
-    nameOfLargestMoon: 'Moon',
+    nameOfLargestMoon: 'The Moon is the largest moon of Earth.',
   },
   {
     name: 'Mars',
